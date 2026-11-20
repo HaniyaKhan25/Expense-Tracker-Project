@@ -29,3 +29,14 @@ while True:
 
         expensesList.append(expense)
         print("\n Done bro. Expense is added succesfully")
+
+#    2. VIEW ALL EXPENSES
+    elif(choice == 2):
+        if(len(expensesList) == 0):
+            print("No expenses added")
+        else:
+            print("======= Here are all your expenses =========")
+            count  = 1
+            for eachExpense in expensesList:
+                print(f"Expense numbe r {count} -> {eachExpense["date"]}, {eachExpense["category"]}, {eachExpense["description"]}, {eachExpense["amount"]} " )
+                count = count + 1
