@@ -48,3 +48,12 @@ while True:
             total = total +eachExpense ["amount"]
 
         print("\n TOTAL EXPENSE = ", total)
+
+# 4. EXIT
+
+    elif(choice == 4):
+        print("Thank you for using my System")
+        break
+
+    else:
+        print("Invalid Choice . Try again")
