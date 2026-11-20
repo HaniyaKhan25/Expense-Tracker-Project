@@ -40,3 +40,11 @@ while True:
             for eachExpense in expensesList:
                 print(f"Expense numbe r {count} -> {eachExpense["date"]}, {eachExpense["category"]}, {eachExpense["description"]}, {eachExpense["amount"]} " )
                 count = count + 1
+
+# 3. VIEW TOTAL SPENDING
+    elif(choice == 3):
+        total = 0
+        for eachExpense in expensesList:
+            total = total +eachExpense ["amount"]
+
+        print("\n TOTAL EXPENSE = ", total)
